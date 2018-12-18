@@ -1,0 +1,38 @@
+/*
+    This file styles the header, footer, and margins used across all pages.
+    I used Sass to write my CSS, so if the actual CSS file looks auto-generated, that's why.
+*/
+.header-flex {
+  display: flex;
+  height: 64px;
+  align-items: center; }
+  .header-flex i {
+    padding: 0 24px; }
+
+@media only screen and (max-width: 600px) {
+  .header-flex i {
+    padding: 10px !important; }
+
+  .page-content {
+    padding: 10px !important; } }
+/*
+    Start of MDL-native classes
+    Changes I made to these classes are commented as such 
+*/
+.mdl-layout__container {
+  height: auto; }
+
+.mdl-layout-title {
+  color: #ffffff !important;
+  text-decoration: none !important; }
+
+.mdl-logo {
+  margin: auto; }
+
+.mdl-mini-footer {
+  padding: 16px !important; }
+
+.page-content {
+  padding: 50px 50px 0 50px; }
+
+/*# sourceMappingURL=styles.css.map */

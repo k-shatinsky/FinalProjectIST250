@@ -1,0 +1,40 @@
+/*
+    This file contains styles specific to index.html.
+    I used Sass to write my CSS, so if the actual CSS file looks auto-generated, that's why.
+*/
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+@media only screen and (max-width: 600px) {
+  .flex-grid {
+    flex-direction: column; }
+
+  .demo-card-image.mdl-card {
+    margin: 25px auto !important; } }
+/*
+    Start of MDL-native classes
+    Changes I made to these classes are commented as such 
+*/
+.demo-card-image.mdl-card {
+  min-width: 256px !important;
+  min-height: 256px !important;
+  margin: 25px; }
+
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: auto 16px; }
+
+.mdl-card__actions {
+  display: inline-flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.4) !important; }
+
+/*# sourceMappingURL=grid.css.map */

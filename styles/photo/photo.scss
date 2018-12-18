@@ -1,0 +1,93 @@
+/*
+    This file contains styles specific to the twelve photo pages.
+    This file does not contain any classes native to MDL, or any modifications to those classes.
+    I used Sass to write my CSS, so if the actual CSS file looks auto-generated, that's why.
+*/
+
+h4 {
+    margin: 0 0 10px !important;
+}
+
+img {
+    max-width: 750px;
+    padding-right: 24px;
+    max-height: 500px;
+}
+
+p {
+    text-align: justify;
+}
+
+p, table {
+    margin-bottom: 50px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.desktop-table {
+    width: 530px !important;
+}
+
+.inner-flex {
+    max-width: 530px;
+}
+
+.mobile-table {
+    display: none;
+    th {
+        border-bottom-color: rgba(0, 0, 0, 0.12);
+        border-bottom-style: solid;
+        border-bottom-width: 0.8px;
+    }
+}
+
+.outer-flex{
+    display: flex;
+}
+
+
+// Tablet and mobile-specific CSS
+@media only screen and (max-width: 1257px){
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        padding-right: 0;
+        margin-bottom: 25px !important;
+    }
+    .desktop-table {
+        display: none;
+    }
+    .inner-flex {
+        margin: auto;
+    }
+    .inner-flex, table, p {
+        max-width: 100%;
+        width: 100%;
+    }
+    .mobile-table {
+        display: inline-table;
+    }
+    .outer-flex{
+        flex-direction: column;
+    }
+}
+
+
+// Mobile-specific CSS
+@media only screen and (max-width: 600px){
+    h1 {
+        font-size: 34px;
+        font-weight: 400;
+        margin-top: 14px !important;
+    }
+    .button-div {
+        padding: 15px 0;
+    }
+    .page-content {
+        margin: 10px;
+    }
+}
